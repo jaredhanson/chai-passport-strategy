@@ -1,4 +1,4 @@
-var Test = require('../lib/Test');
+var Test = require('../lib/test');
 
 describe('test strategy that calls fail', function() {
   

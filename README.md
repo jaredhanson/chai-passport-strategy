@@ -1,8 +1,9 @@
 # chai-passport-strategy
 
-[![Build](https://travis-ci.org/jaredhanson/chai-passport-strategy.png)](http://travis-ci.org/jaredhanson/chai-passport-strategy)
+[![Build](https://travis-ci.org/jaredhanson/chai-passport-strategy.png)](https://travis-ci.org/jaredhanson/chai-passport-strategy)
 [![Coverage](https://coveralls.io/repos/jaredhanson/chai-passport-strategy/badge.png)](https://coveralls.io/r/jaredhanson/chai-passport-strategy)
-[![Dependencies](https://david-dm.org/jaredhanson/chai-passport-strategy.png)](http://david-dm.org/jaredhanson/chai-passport-strategy)
+[![Quality](https://codeclimate.com/github/jaredhanson/chai-passport-strategy.png)](https://codeclimate.com/github/jaredhanson/chai-passport-strategy)
+[![Dependencies](https://david-dm.org/jaredhanson/chai-passport-strategy.png)](https://david-dm.org/jaredhanson/chai-passport-strategy)
 
 
 Helpers for testing [Passport](http://passportjs.org/) strategies with the

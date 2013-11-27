@@ -1,10 +1,10 @@
-var passportStrategy = require('..')
+var plugin = require('..')
   , Test = require('../lib/test');
 
-describe('helper', function() {
+describe('plugin', function() {
   
   var chai = {};
-  passportStrategy(chai);
+  plugin(chai);
   
   it('should add passport helper to chai', function() {
     expect(chai.passport).to.be.a('function');

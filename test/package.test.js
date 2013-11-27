@@ -1,9 +1,9 @@
-var passportStrategy = require('..');
+var passport = require('..');
 
 describe('chai-passport-strategy', function() {
   
   it('should export function', function() {
-    expect(passportStrategy).to.be.a('function');
+    expect(passport).to.be.a('function');
   });
   
 });

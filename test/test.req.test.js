@@ -1,3 +1,5 @@
+/* global describe, it, before, expect */
+
 var Test = require('../lib/test');
 
 describe('test strategy that prepares request', function() {
@@ -8,7 +10,7 @@ describe('test strategy that prepares request', function() {
     if (options.bar !== 'baz') { return this.fail(); }
     
     this.success({ id: '1234'}, { scope: 'read' });
-  }
+  };
   
   describe('sync', function() {
     

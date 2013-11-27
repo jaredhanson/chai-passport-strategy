@@ -1,3 +1,5 @@
+/* global describe, it, before, expect */
+
 var Test = require('../lib/test');
 
 describe('test strategy that calls error', function() {
@@ -5,7 +7,7 @@ describe('test strategy that calls error', function() {
   function Strategy() {}
   Strategy.prototype.authenticate = function() {
     this.error(new Error('something went wrong'));
-  }
+  };
   
   describe('with an error callback', function() {
     var err;
@@ -20,7 +22,7 @@ describe('test strategy that calls error', function() {
     
     it('should call error callback', function() {
       expect(err).to.be.an.instanceof(Error);
-      expect(err.message).to.equal('something went wrong')
+      expect(err.message).to.equal('something went wrong');
     });
   });
   

@@ -1,3 +1,5 @@
+/* global describe, it, before, expect */
+
 var Test = require('../lib/test');
 
 describe('test strategy that calls redirect', function() {
@@ -5,7 +7,7 @@ describe('test strategy that calls redirect', function() {
   function Strategy() {}
   Strategy.prototype.authenticate = function() {
     this.redirect('/login', 401);
-  }
+  };
   
   describe('with a redirect callback', function() {
     var url
@@ -21,7 +23,7 @@ describe('test strategy that calls redirect', function() {
     });
     
     it('should call redirect callback', function() {
-      expect(url).to.be.equal('/login')
+      expect(url).to.be.equal('/login');
       expect(status).to.equal(401);
     });
   });

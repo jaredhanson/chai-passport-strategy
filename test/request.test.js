@@ -1,3 +1,5 @@
+/* global describe, it, expect */
+
 var Request = require('../lib/request');
 
 describe('Request', function() {

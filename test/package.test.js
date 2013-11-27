@@ -1,3 +1,5 @@
+/* global describe, it, expect */
+
 var passport = require('..');
 
 describe('chai-passport-strategy', function() {

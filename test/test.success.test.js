@@ -1,3 +1,5 @@
+/* global describe, it, before, expect */
+
 var Test = require('../lib/test');
 
 describe('test strategy that calls success', function() {
@@ -5,7 +7,7 @@ describe('test strategy that calls success', function() {
   function Strategy() {}
   Strategy.prototype.authenticate = function() {
     this.success({ id: '1234'}, { scope: 'read' });
-  }
+  };
   
   describe('with a success callback', function() {
     var user
@@ -21,7 +23,7 @@ describe('test strategy that calls success', function() {
     });
     
     it('should call success callback', function() {
-      expect(user.id).to.be.equal('1234')
+      expect(user.id).to.be.equal('1234');
       expect(info.scope).to.be.equal('read');
     });
   });

@@ -1,3 +1,5 @@
+/* global describe, it, before, expect */
+
 var Test = require('../lib/test');
 
 describe('test strategy that calls pass', function() {
@@ -5,7 +7,7 @@ describe('test strategy that calls pass', function() {
   function Strategy() {}
   Strategy.prototype.authenticate = function() {
     this.pass();
-  }
+  };
   
   describe('with a pass callback', function() {
     var ok;

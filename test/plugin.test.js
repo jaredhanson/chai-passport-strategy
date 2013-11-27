@@ -1,3 +1,5 @@
+/* global describe, it, expect */
+
 var plugin = require('..')
   , Test = require('../lib/test');
 

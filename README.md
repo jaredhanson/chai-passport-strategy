@@ -20,15 +20,14 @@ Helpers for testing [Passport](http://passportjs.org/) strategies with the
 Use this plugin as you would all other Chai plugins:
 
 ```javascript
-var chai = require('chai')
-  , passport = require('chai-passport-strategy');
+var chai = require('chai');
 
-chai.use(passport);
+chai.use(require('chai-passport-strategy'));
 ```
 
 #### Write Test Cases
 
-Once used, the `chai.passport` helper function will be available to set up
+Once used, the `chai.passport.use` helper function will be available to set up
 test cases for Passport strategies.
 
 The helper function can be called from a hook to setup the test case.  The
@@ -58,7 +57,7 @@ describe('token strategy', function() {
       , info;
     
     before(function(done) {
-      chai.passport(strategy)
+      chai.passport.use(strategy)
         .success(function(u, i) {
           user = u;
           info = i;

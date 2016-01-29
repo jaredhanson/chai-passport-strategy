@@ -1,6 +1,6 @@
 {
   "name": "chai-passport-strategy",
-  "version": "0.2.0",
+  "version": "1.0.0",
   "description": "Helpers for testing Passport strategies with the Chai assertion library.",
   "keywords": [
     "chai",
@@ -27,8 +27,7 @@
     }
   ],
   "main": "./lib",
-  "dependencies": {
-  },
+  "dependencies": {},
   "devDependencies": {
     "make-node": "0.3.x",
     "mocha": "1.x.x",

@@ -2,7 +2,7 @@
 
 [![Build](https://img.shields.io/travis/jaredhanson/chai-passport-strategy.svg)](https://travis-ci.org/jaredhanson/chai-passport-strategy)
 [![Coverage](https://img.shields.io/coveralls/jaredhanson/chai-passport-strategy.svg)](https://coveralls.io/r/jaredhanson/chai-passport-strategy)
-[![Quality](https://img.shields.io/codeclimate/github/jaredhanson/chai-passport-strategy.svg)](https://codeclimate.com/github/jaredhanson/chai-passport-strategy)
+[![Quality](https://img.shields.io/codeclimate/github/jaredhanson/chai-passport-strategy.svg?label=quality)](https://codeclimate.com/github/jaredhanson/chai-passport-strategy)
 [![Dependencies](https://img.shields.io/david/jaredhanson/chai-passport-strategy.svg)](https://david-dm.org/jaredhanson/chai-passport-strategy)
 
 

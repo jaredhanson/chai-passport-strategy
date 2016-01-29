@@ -2,7 +2,7 @@
 
 var Test = require('../lib/test');
 
-describe('test strategy that calls error', function() {
+describe('testing strategy that calls error', function() {
   
   function Strategy() {}
   Strategy.prototype.authenticate = function() {

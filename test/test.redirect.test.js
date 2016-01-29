@@ -2,7 +2,7 @@
 
 var Test = require('../lib/test');
 
-describe('test strategy that calls redirect', function() {
+describe('testing strategy that calls redirect', function() {
   
   function Strategy() {}
   Strategy.prototype.authenticate = function() {

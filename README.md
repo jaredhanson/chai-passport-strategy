@@ -25,7 +25,7 @@ var chai = require('chai');
 chai.use(require('chai-passport-strategy'));
 ```
 
-#### Write Test Cases
+#### Implement Test Cases
 
 Once used, the `chai.passport.use` helper function will be available to set up
 test cases for Passport strategies.
@@ -82,17 +82,45 @@ describe('token strategy', function() {
 });
 ```
 
-## Tests
 
-    $ npm install
-    $ npm test
+## Contributing
 
-## Credits
+#### Tests
 
-  - [Jared Hanson](http://github.com/jaredhanson)
+The test suite is located in the `test/` directory.  All new features are
+expected to have corresponding test cases.  Ensure that the complete test suite
+passes by executing:
+
+```bash
+$ make test
+```
+
+#### Coverage
+
+The test suite covers 100% of the code base.  All new feature development is
+expected to maintain that level.  Coverage reports can be viewed by executing:
+
+```bash
+$ make test-cov
+$ make view-cov
+```
+
+## Support
+
+#### Funding
+
+This software is provided to you as open source, free of charge.  The time and
+effort to develop and maintain this project is dedicated by [@jaredhanson](https://github.com/jaredhanson).
+If you (or your employer) benefit from this project, please consider a financial
+contribution.  Your contribution helps continue the efforts that produce this
+and other open source software.
+
+Funds are accepted via [PayPal](https://paypal.me/jaredhanson), [Venmo](https://venmo.com/jaredhanson),
+and [other](http://jaredhanson.net/pay) methods.  Any amount is appreciated.
+
 
 ## License
 
 [The MIT License](http://opensource.org/licenses/MIT)
 
-Copyright (c) 2013 Jared Hanson <[http://jaredhanson.net/](http://jaredhanson.net/)>
+Copyright (c) 2013-2016 Jared Hanson <[http://jaredhanson.net/](http://jaredhanson.net/)>

@@ -37,7 +37,7 @@ to Passport's strategy API: `success()`, `fail()`, `redirect()`, `pass()`, and
 `error()`.  If the strategy invokes an action that doesn't have a registered
 callback, the test helper will automatically throw an exception.
 
-The following demonstrates a [Mocha](http://visionmedia.github.io/mocha/) test
+The following demonstrates a [Mocha](http://mochajs.org/) test
 case, taken from [passport-http-bearer](https://github.com/jaredhanson/passport-http-bearer)'s
 test suite.
 

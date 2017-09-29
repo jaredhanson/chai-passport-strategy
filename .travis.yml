@@ -1,5 +1,8 @@
 language: "node_js"
 node_js:
+  - "8"
+  - "7"
+  - "6"
   - "5"
   - "4"
   - "3" # io.js
@@ -21,4 +24,5 @@ script:
 after_success:
   - "make report-cov"
 
-sudo: false
+dist: precise
+sudo: required

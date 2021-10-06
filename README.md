@@ -7,8 +7,8 @@
 [![Dependencies](https://img.shields.io/david/jaredhanson/chai-passport-strategy.svg)](https://david-dm.org/jaredhanson/chai-passport-strategy)
 
 
-Helpers for testing [Passport](http://passportjs.org/) strategies with the
-[Chai](http://chaijs.com/) assertion library.
+Helpers for testing [Passport](https://www.passportjs.org/) strategies with the
+[Chai](https://www.chaijs.com/) assertion library.
 
 ## Install
 
@@ -87,6 +87,4 @@ describe('token strategy', function() {
 
 [The MIT License](http://opensource.org/licenses/MIT)
 
-Copyright (c) 2013-2017 Jared Hanson <[http://jaredhanson.net/](http://jaredhanson.net/)>
-
-
+Copyright (c) 2013-2021 Jared Hanson <[https://www.jaredhanson.me/](http://jaredhanson.net/)>

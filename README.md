@@ -87,4 +87,4 @@ describe('token strategy', function() {
 
 [The MIT License](http://opensource.org/licenses/MIT)
 
-Copyright (c) 2013-2021 Jared Hanson <[https://www.jaredhanson.me/](http://jaredhanson.net/)>
+Copyright (c) 2013-2021 Jared Hanson <[https://www.jaredhanson.me/](https://www.jaredhanson.me/)>

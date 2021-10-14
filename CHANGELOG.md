@@ -30,3 +30,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - Helper function to set up test case is now at `chai.passport.use` rather than
 `chai.passport` to more closely mimic the `passport` API.
+
+## [0.1.0] - 2013-08-01
+
+- Initial release.
+
+[1.0.1]: https://github.com/jaredhanson/chai-passport-strategy/compare/v1.0.0...v1.0.1
+[1.0.0]: https://github.com/jaredhanson/chai-passport-strategy/compare/v0.2.0...v1.0.0
+[0.2.0]: https://github.com/jaredhanson/chai-passport-strategy/compare/v0.1.0...v0.2.0
+[0.1.0]: https://github.com/jaredhanson/chai-passport-strategy/releases/tag/v0.1.0

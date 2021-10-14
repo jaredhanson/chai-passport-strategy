@@ -24,3 +24,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Removed
 
 - Removed makefiles in `support/mk` directory.
+
+## [0.2.0] - 2013-11-26
+### Changed
+
+- Helper function to set up test case is now at `chai.passport.use` rather than
+`chai.passport` to more closely mimic the `passport` API.

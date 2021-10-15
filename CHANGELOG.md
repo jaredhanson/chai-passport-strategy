@@ -11,9 +11,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Changed
 
-- Callbacks invoked upon a strategy executing an action function (success, fail,
-redirect, pass, or error) have a `this` context set to the `Test` instance,
-rather than the `Strategy` instance.
+- Callbacks invoked when the strategy under test calls an action function
+(`success()`, `fail()`, `redirect()`, `pass()`, or `error()`) have a `this`
+context set to the `Test` instance, rather than the `Strategy` instance.
 
 ## [1.0.1] - 2017-09-29
 ### Added

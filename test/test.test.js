@@ -223,4 +223,39 @@ describe('Test', function() {
     
   }); // #error
   
+  describe('#finish', function() {
+    function Strategy() {
+    }
+    
+    Strategy.prototype.authenticate = function(req) {
+      req.res.end();
+    };
+    
+    
+    it('should invoke callback', function(done) {
+      chai.passport.use(new Strategy())
+      .request(function(req, res) {
+        req.res = res;
+        res.req = req;
+      })
+      .finish(function() {
+        expect(this).to.be.an.instanceof(Response);
+        done();
+      })
+      .authenticate();
+    }); // should invoke callback
+    
+    it('should throw when callback is not registered', function() {
+      expect(function() {
+        chai.passport.use(new Strategy())
+        .request(function(req, res) {
+          req.res = res;
+          res.req = req;
+        })
+        .authenticate();
+      }).to.throw(Error, 'res#end should not be called');
+    }); // should throw when callback is not registered
+    
+  }); // #finish
+  
 });

@@ -1,6 +1,6 @@
 {
   "name": "chai-passport-strategy",
-  "version": "1.0.1",
+  "version": "2.0.0",
   "description": "Helpers for testing Passport strategies with the Chai assertion library.",
   "keywords": [
     "chai",

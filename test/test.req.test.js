@@ -24,7 +24,7 @@ describe('preparing a request', function() {
       }).fail(function() {
         ok = false;
         done();
-      }).req(function(req) {
+      }).request(function(req) {
         req.headers.foo = 'bar';
       }).authenticate({ bar: 'baz' });
     });
@@ -47,7 +47,7 @@ describe('preparing a request', function() {
       }).fail(function() {
         ok = false;
         done();
-      }).req(function(req, done) {
+      }).request(function(req, done) {
         req.headers.foo = 'bar';
         process.nextTick(done);
       }).authenticate({ bar: 'baz' });

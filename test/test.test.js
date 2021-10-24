@@ -14,7 +14,7 @@ describe('Test', function() {
     }
     
     Strategy.prototype.authenticate = function(req, options) {
-      expect(options).to.deep.equal({ scope: 'profile' })
+      expect(options).to.deep.equal({ scope: [ 'profile', 'email' ] });
       this.redirect('/authorize', 302);
     };
     
@@ -24,7 +24,7 @@ describe('Test', function() {
       .redirect(function() {
         done();
       })
-      .authenticate({ scope: 'profile' });
+      .authenticate({ scope: [ 'profile', 'email' ] });
     }); // should pass options to Strategy#authenticate
     
   }); // #authenticate
@@ -35,7 +35,7 @@ describe('Test', function() {
     
     Strategy.prototype.authenticate = function(req) {
       expect(req.headers['authorization']).to.equal('Bearer mF_9.B5f-4.1JqM')
-      this.success({ id: '248289761001'}, { scope: 'profile' });
+      this.success({ id: '248289761001' });
     };
     
     
@@ -84,8 +84,8 @@ describe('Test', function() {
     function Strategy() {
     }
     
-    Strategy.prototype.authenticate = function() {
-      this.success({ id: '248289761001'}, { scope: 'profile' });
+    Strategy.prototype.authenticate = function(req) {
+      this.success({ id: '248289761001' }, { scope: [ 'profile', 'email' ] });
     };
     
     
@@ -94,7 +94,7 @@ describe('Test', function() {
       .success(function(user, info) {
         expect(this).to.be.an.instanceof(Test);
         expect(user).to.deep.equal({ id: '248289761001' });
-        expect(info).to.deep.equal({ scope: 'profile' });
+        expect(info).to.deep.equal({ scope: [ 'profile', 'email' ] });
         done();
       })
       .authenticate();
@@ -113,7 +113,7 @@ describe('Test', function() {
     function Strategy() {
     }
     
-    Strategy.prototype.authenticate = function() {
+    Strategy.prototype.authenticate = function(req) {
       this.fail('realm="example"', 401);
     };
     
@@ -142,7 +142,7 @@ describe('Test', function() {
     function Strategy() {
     }
     
-    Strategy.prototype.authenticate = function() {
+    Strategy.prototype.authenticate = function(req) {
       this.redirect('/authorize', 302);
     };
     
@@ -171,7 +171,7 @@ describe('Test', function() {
     function Strategy() {
     }
     
-    Strategy.prototype.authenticate = function() {
+    Strategy.prototype.authenticate = function(req) {
       this.pass();
     };
     
@@ -198,7 +198,7 @@ describe('Test', function() {
     function Strategy() {
     }
     
-    Strategy.prototype.authenticate = function() {
+    Strategy.prototype.authenticate = function(req) {
       this.error(new Error('something went wrong'));
     };
     

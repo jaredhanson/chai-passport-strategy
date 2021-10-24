@@ -5,5 +5,6 @@ examples/
 reports/
 test/
 
+.github/
 .jshintrc
 .travis.yml

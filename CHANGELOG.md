@@ -11,6 +11,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Changed
 
+- `Test#req` renamed to `Test#request` and now takes synchronous callbacks with
+`function(req, res)` signature and asynchronous callbacks with `function(req, res, cb)`
+signature to mimic `http.Server` `request` event.
 - Callbacks invoked when the strategy under test calls an action function
 (`success()`, `fail()`, `redirect()`, `pass()`, or `error()`) have a `this`
 context set to the `Test` instance, rather than the `Strategy` instance.

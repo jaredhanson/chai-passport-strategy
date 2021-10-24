@@ -29,7 +29,7 @@ chai.use(require('chai-passport-strategy'));
 #### Implement Test Cases
 
 Once used, the `chai.passport.use` helper function will be available to set up
-test cases for Passport strategies.
+a case which places a Passport strategy under test.
 
 The helper function can be called from a hook to setup the test case.  The
 helper returns a wrapper on which callbacks are registered to be executed

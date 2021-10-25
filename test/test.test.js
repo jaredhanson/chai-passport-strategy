@@ -92,7 +92,7 @@ describe('Test', function() {
     it('should invoke callback', function(done) {
       chai.passport.use(new Strategy())
       .success(function(user, info) {
-        expect(this).to.be.an.instanceof(Test);
+        expect(this).to.be.an.instanceof(Request);
         expect(user).to.deep.equal({ id: '248289761001' });
         expect(info).to.deep.equal({ scope: [ 'profile', 'email' ] });
         done();
@@ -121,7 +121,7 @@ describe('Test', function() {
     it('should invoke callback', function(done) {
       chai.passport.use(new Strategy())
       .fail(function(challenge, status) {
-        expect(this).to.be.an.instanceof(Test);
+        expect(this).to.be.an.instanceof(Request);
         expect(challenge).to.equal('realm="example"');
         expect(status).to.equal(401);
         done();
@@ -150,7 +150,7 @@ describe('Test', function() {
     it('should invoke callback', function(done) {
       chai.passport.use(new Strategy())
       .redirect(function(url, status) {
-        expect(this).to.be.an.instanceof(Test);
+        expect(this).to.be.an.instanceof(Request);
         expect(url).to.equal('/authorize');
         expect(status).to.equal(302);
         done();
@@ -179,7 +179,7 @@ describe('Test', function() {
     it('should invoke callback', function(done) {
       chai.passport.use(new Strategy())
       .pass(function() {
-        expect(this).to.be.an.instanceof(Test);
+        expect(this).to.be.an.instanceof(Request);
         done();
       })
       .authenticate();
@@ -206,7 +206,7 @@ describe('Test', function() {
     it('should invoke callback', function(done) {
       chai.passport.use(new Strategy())
       .error(function(err) {
-        expect(this).to.be.an.instanceof(Test);
+        expect(this).to.be.an.instanceof(Request);
         expect(err).to.be.an.instanceof(Error);
         expect(err.message).to.equal('something went wrong');
         done();

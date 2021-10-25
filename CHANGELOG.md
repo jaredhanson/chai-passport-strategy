@@ -5,6 +5,11 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ## [Unreleased]
+### Changed
+
+- Callbacks invoked when the strategy under test calls an action function
+(`success()`, `fail()`, `redirect()`, `pass()`, or `error()`) have a `this`
+context set to the request, rather than the `Test` instance.
 
 ## [2.0.0] - 2021-10-23
 ### Added
